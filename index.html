@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="">
+<html lang="nn">
 
 <head>
 	<meta charset="utf-8">
@@ -8,32 +8,66 @@
 	<link rel="stylesheet" href="styles.css">
 </head>
 
-<body>
+<body id="index">
 
-	<section id="splash">
-		<div class="sectionwrapper">
-			<header>
-				<div id="header_container" class="header_container">
-					<div id="logo" class="home_logo">
-						<a href="index.html"> </a>
+	<header>
+		<nav>
+			<div id="flexer">
+				<a href="index.html">
+					<div id="logo" class="home_logo"></div>
+				</a>
+				<div id="menu_container">
+					<div id="menu" class="hidden">
+						<div><a href="about.html">om</a></div>
+						<div><a href="cv.html">cv</a></div>
+						<div><a href="portfolio.html">portfolio</a></div>
+						<div><a href="contact.html">kontakt</a></div>
 					</div>
-					<div id=main_nav class="main_nav">
-						<a href="about.html">about</a>
-						<a href="portefolio.html">portefolio</a>
-						<a href="cv.html">CV</a>
-						<a href="contact.html">contact</a>
-					</div>
-
+					<div id="menuknap">☰</div>
 
 				</div>
-			</header>
+			</div>
+		</nav>
+	</header>
 
-			<div id="bg" class="dissappear"> </div>
-
-
-			<p></p>
+	<div class="sectionwrapper">
+		<div class="index_container">
+			<div class="index_color">
+				<div class="index_bilder">
+					<div class="index_bilde"> <img src="pics/portofolio_splash2.gif" alt="gif">
+					</div>
+					<!-- <div class="index_bilde2"> <img src="pics/portofolio_splash2.gif" alt="gif">
+					</div> -->
+				</div>
+			</div>
+			<div class="index_color2">
+				<div class="sunniva">
+					<h2>sunniva</h2>
+				</div>
+				<div class="hyllseth">
+					<h2>hyllseth</h2>
+				</div>
+				<div class="index_text"><a href="portfolio.html">
+						<p>Webdesign</p>
+					</a><a href="portfolio.html">
+						<p>Grafisk design</p>
+					</a><a href="portfolio.html">
+						<p>Lyddesign</p>
+					</a><a href="portfolio.html">
+						<p>Videoredigering</p>
+					</a><a href="portfolio.html">
+						<p>Motion graphics</p>
+					</a> <a href="portfolio.html">
+						<p>UX design</p>
+					</a>
+				</div>
+			</div>
 		</div>
-	</section>
+	</div>
+	<script src="script.js"></script>
+	<footer>
+		<p>©Sunniva Hyllseth</p>
+	</footer>
 </body>
 
 </html>

@@ -2,7 +2,7 @@ window.addEventListener("load", sidenVises);
 
 function sidenVises() {
 	console.log("siden vises!");
-	toggleMenu();
+	document.querySelector("#menuknap").addEventListener("click", toggleMenu);
 
 }
 
@@ -15,9 +15,12 @@ function toggleMenu() {
 
 	if (erSkjult == true) {
 		// menuen er nu skjult - ændr menuknap til lll
-		document.querySelector("#menuknap").
+		document.querySelector("#menuknap").textContent = "☰";
+		document.querySelector("#menu").classList.add("hidden");
+
 	} else {
 		//menuer er nu vist - ændr menuknap til X
-		document.querySelector("#menuknap").
+		document.querySelector("#menuknap").textContent = "✖";
+		document.querySelector("#menu").classList.remove("hidden");
 	}
 }
